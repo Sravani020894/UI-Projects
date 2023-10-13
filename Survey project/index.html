@@ -1,0 +1,48 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>survey-form.freecodecamp.rocks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Name <input type="text" id="name" value="Enter your name"></input></label>
+    <label for="email" id="email-label">Email <input type="email" id="email" value="Enter your Email"></input></label>
+    <label for="number" id="number-label">Age(Optional)<input type="number" id="number" value="Age" min="16" max="48"></input></label>
+    <label for="dropdown">Which option best describes your current role?<select id="dropdown">
+      <option>Student</option>
+      <option>Full Time Job</option>
+      <option>Part Time Job</option>
+      <option>Other</option>
+      </select>
+    </label>
+    <label>Would you recommend freeCodeCamp to a friend?
+      <input type ="radio" name="recommend">Definitely</input>
+      <input type ="radio" name="recommend">Maybe</input>
+      <input type ="radio" name="recommend">Not Sure</input>
+    </label>
+    <label for="dropdown">What is your favorite feature of freeCodeCamp?<select id="dropdown">
+      <option>Challenges</option>
+      <option>project</option>
+      <option>Community</option>
+      <option>Opensource</option>
+      </select>
+    </label>
+    <label>What would you like to see improved?
+      <input type="checkbox" value="1">Front-end Projects</input>
+      <input type="checkbox" value="2">Back-end Projects Projects</input>
+      <input type="checkbox" value="3">Data Visualization</input>
+      <input type="checkbox" value="4">Challenges</input>
+       <input type="checkbox" value="5">Open Source Community</input>
+      <input type="checkbox" value="6">Gitter help rooms</input>
+      <input type="checkbox" value="7">City Meetups</input>
+      <input type="checkbox" value="8">Wiki</input>
+    </label>
+    <label>Any comments or suggestions?<textarea rows="5" cols="20"></textarea></label>
+    <button id="submit" value="submit">submit</button>
+  </form>
+</body>
+</html>
